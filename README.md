@@ -1,2 +1,2 @@
 # AI-ML-Journey
-zero to job ready real world skillset 
+Job ready real world skillset 
