@@ -290,4 +290,21 @@
 # print(f"Final Price: ₹{final_price:.2f}")
 
 #Question -30
+name = input("Enter the name of student: ")
+Python_Marks = float(input("Enter the marks of python: "))
+SQL_Marks = float(input("Enter the marks of SQL: "))
+Mathematics_Marks = float(input("Enter the marks of Maths: "))
 
+total_marks = Python_Marks + SQL_Marks + Mathematics_Marks
+average_marks = total_marks / 3
+percentage = (total_marks/300)*100
+
+print(f"Name: {name}")
+print("---------------Student Marks -------------")
+print(f"Python Marks: {Python_Marks}")
+print(f"SQL Marks: {SQL_Marks}")
+print(f"Maths Marks: {Mathematics_Marks}")
+print("---------------Results Marks -------------")
+print(f"Total Marks: {total_marks}")
+print(f"Average Marks: {average_marks}")
+print(f"percentage: {percentage}%")
