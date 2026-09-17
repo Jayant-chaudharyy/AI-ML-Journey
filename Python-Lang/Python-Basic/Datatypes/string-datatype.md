@@ -1,61 +1,484 @@
-# Day 1 Practice Lab: Python Numeric Data Types & Operations
+# 🐍 Python String Data Type Assessment — 20 Questions
+
+**Total Questions:** 20
+**Total Marks:** 200
+**Marks per Question:** 10
+
+## 📚 Topics Covered
+
+* String creation
+* String variables
+* Single / double / triple quotes
+* Indexing
+* Negative indexing
+* String slicing
+* String concatenation
+* String repetition
+* `len()`
+* Membership operators: `in`, `not in`
+* String methods
+* `upper()`
+* `lower()`
+* `capitalize()`
+* `title()`
+* `swapcase()`
+* `strip()`
+* `replace()`
+* `find()`
+* `count()`
+* `startswith()`
+* `endswith()`
+* `split()`
+* `join()`
+* Basic string formatting
+
+> **Rule:** Try to solve every question yourself. Don't look up solutions. If a method hasn't been taught yet, mark the question `SKIP` and continue.
 
 ---
 
-### Phase 1: Basic Arithmetic & Division Rules (Questions 1–6)
+# 🟢 LEVEL 1 — STRING FUNDAMENTALS
 
-1. Calculate the result of dividing `17` by `4` using standard division (`/`). What data type is the result?
-2. Perform floor division (`//`) with `17` and `4`. What is the output?
-3. Calculate the modulus (`%`) of `17` and `4` to find the remaining value.
-4. Evaluate the expression `2 ** 4`. What does this calculate?
-5. Predict and calculate the output of `10 / 2` versus `10 // 2`. Explain the data type difference.
-6. Calculate `-11 // 3` and `-11 % 3`. (Pay attention to how floor division rounds down for negative numbers!)
+## Q1. Create and Print a String
 
----
+Create a variable called `name` and store your full name in it.
 
-### Phase 2: Assignment Operators (Questions 7–11)
+Print:
 
-7. Set `x = 15`. Use the `+=` operator to add `5` to `x`. Print `x`.
-8. Set `y = 20`. Use the `/=` operator to divide `y` by `4`. What is the final data type of `y`?
-9. Set `z = 7`. Use the `**=` operator to raise `z` to the power of `2`. Print `z`.
-10. Set `count = 25`. Use the `%=` operator to find `count %= 6`. What is stored in `count`?
-11. Set `val = 18`. Perform `val //= 4`. Print the updated value.
+```text
+My name is [your name].
+```
 
----
+Also print the data type of the variable using:
 
-### Phase 3: Comparison Operators (Questions 12–16)
-
-12. Write a line of code using `==` to check if `5 + 5` equals `10.0`. What boolean value does it return?
-13. Compare `15` and `20` using the `<=` operator. Print the output.
-14. Check if `8 != 8.0` using the inequality operator.
-15. Evaluate `(10 // 3) == (10 % 3)`. Is the result `True` or `False`?
-16. Write a statement checking if `5 ** 2` is greater than or equal to (`>=`) `24`.
+```python
+type()
+```
 
 ---
 
-### Phase 4: Built-in Math Functions (Questions 17–22)
+## Q2. Multiple Strings
 
-17. Use `abs()` to find the absolute value of `-42.8`.
-18. Compute $3^4$ using the built-in `pow()` function instead of the `**` operator.
-19. Round the number `7.8654` to `2` decimal places using `round()`.
-20. Round `12.49` without specifying decimal places. What is the output?
-21. Find the maximum and minimum values among `(14, -2, 89, 0, 42)` using `max()` and `min()`.
-22. Use `pow()` with three arguments: `pow(2, 3, 5)`. *(Hint: This calculates `(2 ** 3) % 5`!)*
+Create three string variables:
+
+```text
+name
+course
+university
+```
+
+Store appropriate values and print them in separate lines.
+
+Example:
+
+```text
+Name: Jayant
+Course: MCA AI/ML
+University: Bennett University
+```
 
 ---
 
-### Phase 5: Type Casting & Complex Numbers (Questions 23–27)
+## Q3. String Concatenation
 
-23. Convert the float `9.99` into an integer using `int()`. Does it round or truncate?
-24. Convert the integer `42` into a float using `float()`.
-25. Create a complex number representing $5 + 3j$ using the `complex()` function.
-26. Given the complex number `c = 4 + 7j`, extract and print its real part (`.real`) and imaginary part (`.imag`) separately.
-27. Try converting `int(3 + 4j)`. What happens, and why?
+Create two variables:
+
+```python
+first_name = "Jayant"
+last_name = "Chaudhary"
+```
+
+Join them together to produce:
+
+```text
+Jayant Chaudhary
+```
+
+Use the string concatenation operator.
 
 ---
 
-### Phase 6: Medium Mixed-Logic Challenges (Questions 28–30)
+## Q4. String Repetition
 
-28. Create a variable `num = 12.678`. Round it to `1` decimal place, convert that rounded result to an `int`, and check if it is equal to `13`.
-29. Calculate the hypotenuse $c$ of a right triangle where $a = 3$ and $b = 4$ using the formula $c = \sqrt{a^2 + b^2}$. Use `pow()` or `**` to compute it without importing the `math` module.
-30. Given a total of `125` minutes, use floor division (`//`) and modulus (`%`) to convert it into `hours` and `remaining_minutes`. Print the result in the format: `"125 minutes = X hours and Y minutes"`.
+Create:
+
+```python
+word = "Python"
+```
+
+Use the string repetition operator to print:
+
+```text
+PythonPythonPython
+```
+
+Then print the word 5 times.
+
+---
+
+## Q5. Find String Length
+
+Take a string from the user.
+
+Print:
+
+```text
+Original String: ______
+Length: ______
+```
+
+Use the appropriate built-in function to find the number of characters.
+
+---
+
+# 🟢 LEVEL 2 — STRING INDEXING & SLICING
+
+## Q6. Positive Indexing
+
+Given:
+
+```python
+text = "PYTHON"
+```
+
+Print each character separately using positive indexing:
+
+```text
+P
+Y
+T
+H
+O
+N
+```
+
+Do not use a loop.
+
+---
+
+## Q7. Negative Indexing
+
+Given:
+
+```python
+text = "PROGRAMMING"
+```
+
+Use negative indexing to print:
+
+1. Last character
+2. Second-last character
+3. Third-last character
+
+---
+
+## Q8. Extract Characters
+
+Given:
+
+```python
+text = "PYTHON"
+```
+
+Use indexing to print:
+
+```text
+First character
+Third character
+Last character
+Second-last character
+```
+
+---
+
+## Q9. Basic Slicing
+
+Given:
+
+```python
+text = "PROGRAMMING"
+```
+
+Use slicing to extract:
+
+```text
+First 4 characters
+Last 4 characters
+Characters from index 2 to 6
+```
+
+---
+
+## Q10. Reverse a String
+
+Take a string from the user and reverse it using **string slicing**.
+
+Example:
+
+```text
+Input: Python
+Output: nohtyP
+```
+
+Do not use a loop.
+
+---
+
+# 🟡 LEVEL 3 — STRING OPERATIONS & METHODS
+
+## Q11. Change String Case
+
+Take a string from the user.
+
+Print:
+
+```text
+Original
+UPPERCASE
+lowercase
+Capitalized
+Title Case
+Swap Case
+```
+
+Use the appropriate string methods.
+
+---
+
+## Q12. Remove Extra Spaces
+
+Given:
+
+```python
+text = "   Python is Amazing   "
+```
+
+Remove the unnecessary spaces from the beginning and end.
+
+Print:
+
+```text
+Python is Amazing
+```
+
+Also print the length of the string:
+
+* Before removing spaces
+* After removing spaces
+
+---
+
+## Q13. Replace Characters
+
+Given:
+
+```python
+text = "I love Java"
+```
+
+Replace `"Java"` with `"Python"`.
+
+Expected output:
+
+```text
+I love Python
+```
+
+---
+
+## Q14. Find a Word
+
+Given:
+
+```python
+text = "Python is easy to learn and Python is powerful"
+```
+
+Find the position/index of the **first occurrence** of `"Python"`.
+
+Also find the position/index of `"powerful"`.
+
+---
+
+## Q15. Count Characters
+
+Take a string from the user.
+
+Ask the user for a character.
+
+Count how many times that character appears in the string.
+
+Example:
+
+```text
+Enter string: programming
+Enter character: m
+
+m appears 2 times.
+```
+
+---
+
+# 🟡 LEVEL 4 — MEMBERSHIP & STRING ANALYSIS
+
+## Q16. Membership Test
+
+Take a sentence from the user.
+
+Ask the user for a word.
+
+Check whether the word exists in the sentence using:
+
+```python
+in
+```
+
+Print an appropriate result.
+
+Example:
+
+```text
+Sentence: Python is easy to learn
+Word: Python
+
+Result: Python exists in the sentence.
+```
+
+Also test the opposite case.
+
+---
+
+## Q17. Starts With / Ends With
+
+Take a filename from the user.
+
+Check whether:
+
+* It starts with `"data"`
+* It ends with `".csv"`
+
+Example:
+
+```text
+Filename: data_science.csv
+
+Starts with data: True
+Ends with .csv: True
+```
+
+Use the appropriate string methods.
+
+---
+
+## Q18. Split a Sentence
+
+Take a sentence from the user.
+
+Split the sentence into individual words.
+
+Example:
+
+```text
+Input:
+Python is easy to learn
+
+Output:
+['Python', 'is', 'easy', 'to', 'learn']
+```
+
+Also print the total number of words.
+
+---
+
+# 🟠 LEVEL 5 — STRING CHALLENGES
+
+## Q19. Username Generator
+
+Take the following information from the user:
+
+```text
+First Name
+Last Name
+Year of Birth
+```
+
+Create a username using string operations.
+
+For example:
+
+```text
+First Name: Jayant
+Last Name: Chaudhary
+Year: 2003
+```
+
+Possible output:
+
+```text
+Username: jayant.chaudhary2003
+```
+
+### Requirements
+
+* Convert the name to lowercase.
+* Join the first and last name.
+* Add the birth year.
+* Don't manually type the final username.
+
+---
+
+# 🔴 Q20. FINAL BOSS — Student Profile
+
+Create a program that takes the following information from the user:
+
+```text
+Full Name
+College Name
+Course
+City
+Email
+```
+
+Your program should generate a clean student profile.
+
+Example:
+
+```text
+====================================
+          STUDENT PROFILE
+====================================
+
+Name      : Jayant Chaudhary
+College   : Bennett University
+Course    : MCA AI/ML
+City      : Greater Noida
+Email     : jayantd@example.com
+
+====================================
+```
+
+### Your program must also perform the following string operations:
+
+1. Print the student's name in uppercase.
+2. Print the student's name in lowercase.
+3. Print the number of characters in the student's full name.
+4. Print the first character of the name.
+5. Print the last character of the name.
+6. Check whether the email contains `"@"`.
+7. Check whether the email ends with `".com"`.
+8. Replace spaces in the name with `_`.
+
+### Example
+
+```text
+Name Uppercase : JAYANT CHAUDHARY
+Name Lowercase : jayant chaudhary
+Name Length    : 17
+First Character: J
+Last Character : Y
+Contains @     : True
+Ends with .com : True
+Username Name  : Jayant_Chaudhary
+```
+
+---
+
