@@ -69,7 +69,9 @@ print(b.swapcase())
 
 # question -12
 text = "   Python is Amazing   "
-print(text.strip())
+new_text = text.strip()
+print(len(text))
+print(len(new_text))
 
 # question -13
 text = "I love Java"
@@ -129,12 +131,12 @@ print(f"E Mail: {e_mail}")
 print("====================================")
 
 # Part -2
-print(f"Name: {full_name.upper()}")
-print(f"Name: {full_name.lower()}")
+print(f"Name Uppercase: {full_name.upper()}")
+print(f"Name Lowercase: {full_name.lower()}")
 print("Name Length: ", len(full_name))
 print("First Character: ", full_name[0])
 print("Last Character: ", full_name[-1])
 print("E Mail Conatain @: ", '@' in e_mail)
-print("E Mail Ends with .com: {e_mail}", e_mail.endswith(".com"))
+print("E Mail Ends with .com: ", e_mail.endswith(".com"))
 user_name = full_name.replace(" ", "_")
 print(f"UserName: {user_name}")
