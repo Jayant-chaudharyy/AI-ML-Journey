@@ -23,7 +23,7 @@ Print both variables and their types.
 
 ### Q2. Boolean Conversion
 
-Take a value from the user and convert it into a Boolean using `bool()`.
+Take a value from the user and convert it into a Boolean using `bool()` and test these by taking each input as seprately.
 
 Test your program with:
 
