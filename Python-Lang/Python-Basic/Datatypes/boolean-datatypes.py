@@ -63,14 +63,26 @@
 # print("Above 30°C ", a<30)
 
 # # question - 11
-# age = 23
-# has_id = True
+# age = int(input("Enter the Age: "))
+# has_id = input("Enter the status in (yes/no)").lower() == "yes"
 # is_eligible = (age >= 18) and has_id
 # print("Is eligible:", is_eligible)
 
-# question -12
-student_id = input("Enter the Student ID: ")
-reg_number = int(input("Enter The register Number: "))
-condition_1 = bool(student_id)
-condition_2 = bool(reg_number)
-print("Eligible Status: ",condition_1 or condition_1)
+# # question -12
+# student_id = input("Enter the Student ID: ")
+# reg_number = int(input("Enter The register Number: "))
+# condition_1 = bool(student_id)
+# condition_2 = bool(reg_number)
+# print("Eligible Status: ",condition_1 or condition_1)
+
+# # question -13
+# is_raining = False
+# if not is_raining:
+#     print("not raining")
+
+# # question -14
+# age = int(input("Enter the age : "))
+# has_degree = input("Do you have a degree? (yes/no): ").lower() == "yes"
+# has_experience = input("Do you have relevant experience? (yes/no): ").lower() == "yes"
+# can_apply = age >= 18 and (has_degree or has_experience)
+# print("Elidigible", can_apply)
