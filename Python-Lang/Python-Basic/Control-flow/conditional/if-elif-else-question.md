@@ -7,7 +7,6 @@
 **Total Questions:** 20
 **Difficulty:** Beginner → Intermediate → Practical
 
-> **Instructions:** Solve all questions yourself. Use `input()` wherever user input is requested. Focus on understanding the condition and choosing the correct `if/elif/else` structure.
 
 ---
 
@@ -520,16 +519,3 @@ username == correct_username
 ```
 
 ---
-
-## 🧠 Your Goal
-
-Don't just memorize the syntax.
-
-For every question, ask yourself:
-
-**1. What condition am I checking?**
-**2. How many possible outcomes are there?**
-**3. Do I need `if`, `if-else`, or `if-elif-else`?**
-**4. Do I need `and`, `or`, or `not`?**
-
-Complete **Q1 → Q20** and send me your code. I'll evaluate each question separately with a **/10 score**, identify logic errors, and suggest improvements without simply rewriting your solution.
