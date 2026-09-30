@@ -5,7 +5,6 @@
 `if` • `elif` • `else`
 
 **Total Questions:** 20
-**Difficulty:** Beginner → Intermediate → Practical
 
 
 ---
@@ -518,4 +517,4 @@ number % 2 == 0
 username == correct_username
 ```
 
----
+---------------------------------END---------------------------------------------------------
